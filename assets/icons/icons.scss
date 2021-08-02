@@ -1,0 +1,87 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  @include def-background("contain");
+
+  &--w {
+    &-xs {
+      width: 16px;
+    }
+
+    &-sm {
+      width: 18px;
+    }
+
+    &-md {
+      width: 20px;
+    }
+
+    &-lg {
+      width: 22px;
+    }
+
+    &-xl {
+      width: 24px;
+    }
+
+    &-presentation {
+      width: 52px;
+    }
+
+    &-grade {
+      width: 36px;
+    }
+  }
+
+  &--xxxs {
+    width: 8px;
+    height: 8px;
+  }
+
+  &--xxs {
+    width: 10px;
+    height: 10px;
+  }
+
+  &--xs {
+    width: 12px;
+    height: 12px;
+  }
+
+  &--sm {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--md {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--xl {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--dots {
+    width: 3px;
+  }
+
+  // &--danger {
+  // }
+
+  > * {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.logo {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-family: map-get($font-names, bold);
+}

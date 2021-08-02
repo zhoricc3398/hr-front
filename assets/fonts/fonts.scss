@@ -1,0 +1,20 @@
+/*fonts*/
+@mixin register-font-family($name) {
+  @font-face {
+    font-family: $name;
+    src: url($font_path + $name + ".ttf") format("truetype"), local($name);
+
+    // src: url($font-path + $name + ".eot");
+    // src: url($font-path + $name + ".eot?#iefix") format("embedded-opentype"),
+    //     local($name),
+    //     url($font_path + $name + ".ttf") format("truetype"),
+    //     url($font_path + $name + ".svg") format("svg");
+    /* IE6-IE8 */
+    // url($font-path + $name + '.woff2') format('woff2'),  Super Modern Browsers
+    // url($font_path + $name + '.woff') format('woff'),  Pretty Modern Browsers
+  }
+}
+
+@include register-font-family(map-get($font-names, "regular"));
+@include register-font-family(map-get($font-names, "medium"));
+@include register-font-family(map-get($font-names, "bold"));

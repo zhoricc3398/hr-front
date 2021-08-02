@@ -1,0 +1,18 @@
+@mixin def-background($size: 'contain') {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: #{$size};
+}
+
+@mixin make-flex($content: "center") {
+  display: flex;
+  align-items: center;
+  justify-content: #{$content};
+}
+
+@mixin def-position($position: "0") {
+  left: #{$position};
+  right: #{$position};
+  bottom: #{$position};
+  top: #{$position};
+}

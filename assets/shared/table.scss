@@ -1,0 +1,140 @@
+table {
+  width: 100%;
+
+  thead,
+  tbody {
+    background-color: unset;
+    tr {
+      th,
+      td {
+        border: none;
+        border-bottom: 1px #edebe9 solid;
+        text-align: start;
+      }
+
+      th {
+        font-size: 12px;
+        line-height: 15px;
+        color: #605e5c;
+        font-family: map-get($font-names, medium);
+        padding-bottom: 15px;
+      }
+
+      td {
+        font-size: 14px;
+        line-height: 17px;
+        color: #323130;
+        font-family: map-get($font-names, medium);
+        padding: 10px 0;
+
+        &:last-child {
+          padding: 0;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+.work-experience {
+  td {
+    &:last-child {
+      text-align: start;
+    }
+  }
+}
+
+// table {
+//   width: 100%;
+//   border-radius: 4px;
+
+//   thead {
+//     background-color: #dce3ea;
+//   }
+
+//   tr {
+//     &.active {
+//       background-color: #f6f8fa;
+//     }
+//   }
+
+//   td,
+//   th {
+//     padding: 10px;
+//     font-size: 12px;
+//     text-align: center;
+//     border: 1px solid #a7aeb46e;
+//   }
+
+//   td {
+//     &.td-with-arrow {
+//       position: relative;
+//       cursor: pointer;
+
+//       .icon {
+//         position: absolute;
+//         left: 15px;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//         transform: rotate(-90deg);
+//       }
+
+//       &.active {
+//         .icon {
+//           transform: rotate(0deg);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .table-header {
+//   @include make-flex("space-between");
+//   padding: 15px 0;
+
+//   .btn--transparent-save {
+//     font-size: 12px;
+//     padding: 4px 10px;
+//   }
+
+//   &__title {
+//     color: #5a6670;
+//     font-size: 12px;
+//     font-family: map-get($font-names, bold);
+//   }
+// }
+
+// .table-footer {
+//   padding: 10px 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   .form-fieldset-placeholder {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 0;
+//   }
+
+//   .form-label {
+//     margin-right: $def-space / 2;
+//   }
+
+//   .select {
+//     padding: 0;
+
+//     &__option--selected {
+//       position: relative;
+//       padding: 7px 26px 7px 10px;
+
+//       .icon {
+//         position: absolute;
+//         right: 5px;
+//         top: 0;
+//         bottom: 0;
+//         margin: auto;
+//       }
+//     }
+//   }
+// }

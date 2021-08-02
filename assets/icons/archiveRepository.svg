@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
+  <g id="Group_35" data-name="Group 35" transform="translate(-12 -117)">
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="24" height="24" transform="translate(12 117)" fill="none"/>
+    <g id="package_2_" data-name="package (2)" transform="translate(13 117.959)">
+      <line id="Line_7" data-name="Line 7" x1="7.741" y1="4.464" transform="translate(7.13 3.901)" fill="none" stroke="#bdc2c5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="Path_3" data-name="Path 3" d="M19,14.446V7.334A1.778,1.778,0,0,0,18.111,5.8L11.889,2.24a1.778,1.778,0,0,0-1.778,0L3.889,5.8A1.778,1.778,0,0,0,3,7.334v7.112a1.778,1.778,0,0,0,.889,1.538l6.222,3.556a1.778,1.778,0,0,0,1.778,0l6.222-3.556A1.778,1.778,0,0,0,19,14.446Z" transform="translate(0)" fill="none" stroke="#bdc2c5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="Path_4" data-name="Path 4" d="M3.27,6.96,11.038,11.3,18.806,6.96" transform="translate(-0.038 -0.503)" fill="none" stroke="#bdc2c5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+      <line id="Line_8" data-name="Line 8" y1="8.67" transform="translate(11 11.179)" fill="none" stroke="#bdc2c5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

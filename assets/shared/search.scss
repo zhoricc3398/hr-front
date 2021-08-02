@@ -1,0 +1,43 @@
+.search {
+  width: 470px;
+  height: 30px;
+  display: flex;
+  background-color: #cce4f6;
+  border-radius: 5px;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: #004578;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: map-get($font-names, regular);
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #004578;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #004578;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #004578;
+    }
+  }
+
+  &__label {
+    width: 35px;
+    height: 100%;
+    @include make-flex("center");
+    flex-shrink: 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}

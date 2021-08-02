@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  background-color: #0078d4;
+  @include make-flex("space-between");
+}
+
+.user {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: map-get($font-names, bold);
+  border-radius: 50%;
+  @include make-flex("center");
+  color: #ffffff;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #6bb700;
+    border: 2px #ffffff solid;
+    border-radius: 50%;
+    box-sizing: content-box;
+    width: 8px;
+    height: 8px;
+    right: -1px;
+    bottom: -2px;
+  }
+}

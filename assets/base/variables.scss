@@ -1,0 +1,53 @@
+/*variables*/
+
+//base paths
+// $image-path: "https://zhoricc3398.github.io/bog-archive/assets/";
+// $font-path: "https://zhoricc3398.github.io/bog-archive/assets/fonts/";
+$image-path: "/assets/";
+$font-path: "/assets/fonts/";
+
+//
+$font-names: (
+  medium: FiraGO-Medium,
+  regular: FiraGO-Regular,
+  bold: FiraGO-SemiBold,
+);
+
+//
+$font-sizes: (
+  sm: 12px,
+  md: 14px,
+  lg: 16px,
+  xl: 32,
+);
+
+//
+$G-100-Lit-green: #7AC143;
+$Y-100-Lit-mandarine: #F6D276;
+$R-100-Lit-grapefruit: #ED6464;
+$Y-30-Lit-egg: #FDF2D7;
+$N-100-Lit-smoke: #DCE3EA;
+$G-50-Lit-Grape: #F1F7E7;
+$T-100-Lit-Nocturne: #353830;
+$T-50-Lit-ash: #838383;
+
+//
+$def-space: 30px;
+$def-radius: 7px;
+$def-border-solid: 1px solid #eaeaea;
+
+//
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+);
+
+//
+$def-transition: all 0.2s linear;
+
+//tabs
+$tab-content-top-space: 40px;
+
+//comments
+$commnets-thumbnail-size: 55px;

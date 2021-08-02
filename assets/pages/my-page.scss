@@ -1,0 +1,200 @@
+.my-page {
+  height: 100%;
+
+  &__empty {
+    max-width: 325px;
+    width: 100%;
+    margin: 0 auto;
+    @include make-flex("center");
+    flex-direction: column;
+    text-align: center;
+
+    &--icon {
+      @include make-flex("center");
+      width: 115px;
+      height: 115px;
+      background-color: #eff6fc;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    &--title {
+      color: #323130;
+      font-size: 18px;
+      line-height: 23px;
+      font-family: map-get($font-names, bold);
+      margin-bottom: 15px;
+    }
+
+    &--description {
+      color: #605e5c;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__profile {
+    @include make-flex("space-between");
+    padding: 35px 20px 30px;
+  }
+
+  &__identity {
+    display: flex;
+    align-items: center;
+
+    &--user {
+      width: 71px;
+      height: 71px;
+      font-size: 25px;
+      line-height: 33px;
+      font-family: map-get($font-names, bold);
+      border-radius: 50%;
+      @include make-flex("center");
+      color: #ffffff;
+      position: relative;
+      margin-right: 20px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url($image-path + "icons/check.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+        background-color: #6bb700;
+        border: 2px #ffffff solid;
+        border-radius: 50%;
+        box-sizing: content-box;
+        width: 20px;
+        height: 20px;
+        right: -1px;
+        bottom: -2px;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 25px;
+      color: #a19f9d;
+      font-family: map-get($font-names, medium);
+
+      strong {
+        font-size: 20px;
+        color: #323130;
+        font-family: map-get($font-names, bold);
+      }
+    }
+  }
+
+  //   &__edit-profile {
+  //     display: flex;
+  //     align-items: center;
+
+  //     &--icon {
+  //       @include make-flex("center");
+  //       margin-right: 10px;
+  //       width: 32px;
+  //       height: 32px;
+  //       background-color: #ffffff;
+  //       border-radius: 50%;
+  //     }
+
+  //     span {
+  //       color: #005a9e;
+  //       font-size: 12px;
+  //       line-height: 14px;
+  //     }
+  //   }
+
+  &__info {
+    padding: 60px 20px 70px;
+    height: 100%;
+
+    & > .btn {
+      margin-bottom: 25px;
+    }
+
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px #dce8f2 solid;
+
+      &:nth-of-type(n + 1) {
+        padding-top: 40px;
+      }
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    &.personal-information,
+    &.corporate-data {
+      padding-bottom: 30px;
+    }
+
+    &--item {
+      width: 50%;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 12px;
+        line-height: 14px;
+        color: #605e5c;
+
+        strong {
+          display: block;
+          font-size: 16px;
+          line-height: 19px;
+          color: #323130;
+          font-family: map-get($font-names, medium);
+          margin-top: 5px;
+        }
+      }
+    }
+
+    &--icon {
+      width: 56px;
+      height: 56px;
+      background-color: #eff6fc;
+      border-radius: 50%;
+      margin-right: 15px;
+      @include make-flex("center");
+    }
+
+    .pagination {
+      margin-top: 45px;
+    }
+  }
+}
+
+.add-tests,
+.add-trainings {
+  &__title {
+    font-size: 18px;
+    line-height: 23px;
+    color: #323130;
+    font-family: map-get($font-names, bold);
+    text-align: center;
+  }
+
+  .form-field--date:after {
+    display: none;
+  }
+}
+
+.add-tests {
+  .form-field--date-container {
+    width: 100%;
+  }
+}

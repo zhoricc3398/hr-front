@@ -1,0 +1,125 @@
+.navigation {
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
+
+  &.active {
+    width: 260px;
+
+    .navigation {
+      &__company {
+        &--logo {
+          margin-right: 12.5px;
+        }
+
+        a {
+          display: unset;
+        }
+      }
+
+      &__header {
+        justify-content: unset;
+        padding: 0 25px;
+      }
+
+      &__list {
+        &-item {
+          font-size: 14px;
+          justify-content: unset;
+
+          .icon {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      &__body {
+        padding: 30px 15px 0;
+      }
+    }
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+
+    &--logo {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 3px #ffffff solid;
+      border-radius: 50%;
+    }
+
+    a {
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 22px;
+      font-family: map-get($font-names, bold);
+      display: none;
+    }
+  }
+
+  &__header {
+    height: 55px;
+    background-color: #0078d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body {
+    height: 100%;
+    background-color: #ffffff;
+    padding: 30px 5px 0;
+  }
+
+  &__list {
+    padding: 0;
+
+    &-item {
+      color: #605e5c;
+      cursor: pointer;
+      list-style-type: none;
+      width: 100%;
+      height: 45px;
+      @include make-flex("center");
+      padding: 0 10px;
+      line-height: 17px;
+      font-size: 0;
+      margin-bottom: 15px;
+
+      .icon {
+        .a {
+          stroke: #605e5c;
+        }
+      }
+
+      &.active-link {
+        background-color: #eff6fc;
+        border-radius: 5px;
+        color: #0078d4;
+
+        .icon {
+          .a {
+            stroke: #0078d4;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
