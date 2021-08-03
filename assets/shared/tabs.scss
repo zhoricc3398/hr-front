@@ -7,6 +7,47 @@
   padding: 0 20px;
   margin: 0;
 
+  &__inner {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 16px;
+      color: #605e5c;
+      padding: 10px 20px;
+      margin-right: 5px;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: inherit;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        font-family: map-get($font-names, medium);
+        background-color: #eff6fc;
+        border-radius: 20px;
+
+        a {
+          color: #0078d4;
+        }
+      }
+    }
+  }
+
   li {
     display: flex;
     justify-content: center;
@@ -29,23 +70,23 @@
     &:last-child {
       margin-right: 0;
     }
-  }
 
-  li.active {
-    color: #323130;
-    font-family: map-get($font-names, medium);
-    position: relative;
+    &.active {
+      color: #323130;
+      font-family: map-get($font-names, bold);
+      position: relative;
 
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      background-color: #0078d4;
-      width: 100%;
-      height: 3px;
-      left: 0;
-      right: 0;
-      bottom: -12px;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #0078d4;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -12px;
+      }
     }
   }
 }

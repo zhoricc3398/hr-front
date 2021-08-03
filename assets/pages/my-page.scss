@@ -118,6 +118,12 @@
       margin-bottom: 25px;
     }
 
+    .orders {
+      &__filter {
+        @include make-flex("space-between");
+      }
+    }
+
     &--wrapper {
       display: flex;
       flex-wrap: wrap;

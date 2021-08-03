@@ -26,20 +26,16 @@ table {
         color: #323130;
         font-family: map-get($font-names, medium);
         padding: 10px 0;
-
-        &:last-child {
-          padding: 0;
-          text-align: end;
-        }
       }
     }
   }
 }
 
-.work-experience {
+.orders {
+  th,
   td {
     &:last-child {
-      text-align: start;
+      text-align: end;
     }
   }
 }
